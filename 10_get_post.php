@@ -1,6 +1,8 @@
 <?php
+ if(isset($_POST['submit'])){
  echo $_POST['name'];
  echo $_POST['age'];
+}
 ?>
 
 <a href="<?php echo $_SERVER['PHP_SELF'];?>?name=John&age=30">Click</a>
@@ -14,5 +16,5 @@
     <label for="age">Age:</label>
     <input name='age' type="text">
   </div>
-  <input type="submit" value="Submit">
+  <input type="submit" name="submit" value="Submit">
 </form>
