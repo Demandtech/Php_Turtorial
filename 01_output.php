@@ -2,7 +2,7 @@
   //echo - output strings, numbers, html etc
   // echo 'Hello';
 
-  //print - Work like echo, but can only take a songle argument
+  //print - Work like echo, but can only take a single argument
   // print 123;
 
   //prnt_r() - print single values and arrays
