@@ -35,13 +35,13 @@ class User {
 $user1 = new User('Brad', 'demandwork@gmail.com', '123456');
 $user2 = new User('Rasheed', 'demandwork', 'dmeand');
 
-echo $user1->name;
-echo $user2->password;
+//echo $user1->name;
+//echo $user2->password;
 
 
 //Inheritance
 
-class employee extends User {
+class Employee extends User {
  public function __construct($name, $email, $password, $title)
  {
   parent::__construct($name, $email, $password);
@@ -51,3 +51,7 @@ class employee extends User {
   return $this->title;
  }
 }
+
+$employee1 = new Employee('Sara', 'sara@yahoo.com', 'password', 'Manager');
+
+echo $employee1->get_title();
